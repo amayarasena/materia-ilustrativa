@@ -1,0 +1,390 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*-----------------------------------------/*
+              CABEÇALHO
+/*-----------------------------------------*/
+header {
+    background-color: #BF5D39;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 25px;
+    color: white;
+    font-family: "Urbanist", sans-serif;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    z-index: 900;
+}
+
+/*-----------------------------------------/*
+            CONFIGURAÇÕES MENU
+-----------------------------------------*/
+.menu-lateral {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #ffffff;
+    overflow-y: auto;
+    transition: 0.3s;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+
+}
+
+.menu-lateral.ativo {
+    left: 0;
+}
+
+button {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 10px;
+    background-color: #BF5D39;
+    border: none;
+    color: white;
+}
+
+button:hover {
+    background-color: #f6b7a0;
+}
+
+.titulo-menu {
+    color: rgb(192, 97, 24);
+    position: fixed;
+    font-size: 30px;
+    margin: 10px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.menu-lateral hr {
+    height: 1.5px;
+    background-color: #000000;
+    margin: 10px 0;
+}
+
+.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+    margin-top: -15px;
+}
+
+.menu-lateral li {
+    padding: 13px;
+}
+
+.menu-lateral a {
+    color: rgb(170, 84, 13);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+    display: block;
+}
+
+.menu-lateral a:hover {
+    background-color: #BF5D39;
+    display: block;
+}
+
+/*-----------------------------------------
+        REDES SOCIAIS NO MENU LATERAL
+/*----------------------------------------*/
+.redes-sociais {
+    display: flex;
+    gap: 30px;
+    margin: 0 14px;
+}
+
+.redes-sociais i {
+    font-size: 20px;
+}
+
+.redes-sociais i:hover {
+    background-color: white;
+}
+
+/*-----------------------------------------
+             BARRA DE NAVEGAÇÃO
+/*-----------------------------------------*/
+nav {
+    display: flex;
+    gap: 25px;
+    margin: 0 auto;
+}
+
+.nav a {
+    display: inline;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: "Urbanist", sans-serif;
+}
+
+.nav a:hover {
+    background-color: #f6b7a0;
+}
+
+/*-----------------------------------------/*
+              REDES SOCIAIS NO TOPO
+/*-----------------------------------------*/
+.social {
+    margin: 15px;
+    margin-right: 25px;
+}
+
+.social a {
+    color: aliceblue;
+    text-decoration: none;
+    transition: 0.2s;
+    width: 25px;
+    margin-left: 15px;
+}
+
+.social a:hover {
+    color: aliceblue;
+}
+
+/*-----------------------------------------/*
+              CORPO
+/*-----------------------------------------*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    background-attachment: fixed;
+
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    color: #BF5D39;
+    padding: 1px;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #BF5D39;
+    width: 100%;
+    max-width: 600px;
+    margin: 8px auto;
+    padding: 10px;
+}
+
+h3 {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #BF5D39;
+    ;
+    text-align: center;
+    padding: 1px;
+}
+
+p,
+li,
+ul {
+    text-align: justify;
+    padding: 10px;
+    margin: 8px auto;
+    width: 100%;
+    max-width: 600px;
+
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+b {
+    color: #BF5D39;
+    text-align: justify;
+    padding: 0;
+    margin: 8px auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+
+/*-----------------------------------------/*
+               IMAGENS/VIDEOS
+/*-----------------------------------------*/
+picture img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 600px;
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/*-----------------------------------------/*
+                RODAPÉ
+/*-----------------------------------------*/
+footer {
+    margin-top: 10px;
+    padding: 0;
+    background-color: #BF5D39;
+    color: white;
+}
+
+.footer-row {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    flex-wrap: wrap;
+}
+
+/*-----------------------------------------/*
+              RESPONSIVIDADE
+/*-----------------------------------------*/
+
+@media(min-width: 768px) {
+    .card {
+        width: 50%;
+    }
+}
+
+@media (max-width:768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        padding: 0 10px;
+        font-size: 14px;
+        gap: 8px;
+    }
+
+    .nav a {
+        align-items: center;
+        margin: 0 10px;
+
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:768px) {
+    .menu-lateral ul li a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-row {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .social a img {
+        margin-left: 10px;
+    }
+}
+
+@media(max-width:768px) {
+    .menu-lateral {
+        width: 80%;
+        max-width: 200px;
+    }
+}
+
+@media(max-width: 768px) {
+    .titulo-menu {
+        font-size: 25px;
+        text-align: left;
+    }
+}
+
+@media(min-width: 769px) {
+    main {
+        margin-left: 260px;
+        ;
+    }
+}
+
+@media (max-width: 480px) {
+    .body {
+        background-color: #BF5D39;
+    }
+
+    .container {
+        padding: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .btn-voltar {
+        font-size: 0.85rem;
+    }
+}

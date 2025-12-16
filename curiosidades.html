@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/meulogo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Corpo em movimento: o salto da atividade física no país</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=DM+Serif+Text:ital@0;1&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <button onclick="abrirMenu()">☰ Menu</button> <!--Botão de Menu lateral-->
+
+        <nav id="menu-lateral" class="menu-lateral">
+            <h2 class="titulo-menu">Meu Portal</h2><br><br>
+            <hr> <!--Linha horizontal-->
+
+            <div class="redes-sociais">
+                <a href="https://instagram.com/amayarasn" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://linkedin.com/in/mayarasena-202b52002n" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/amayarasena" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <hr>
+            <ul> <!--Barra lateral-->
+                <li><a href="#">Curiosidades</a></li>
+                <li><a href="economia.html">Economia</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+            <button onclick="fecharMenu()">Fechar</button><!--Botão de Fechar menu-->
+        </nav>
+
+        <!--Menu fixo-->
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="esportes.html">Esportes</a>
+            <a href="saude.html">Saúde</a>
+            <a href="tecnologia.html">Tecnologia</a>
+        </nav>
+        <div class="social">
+            <a href="https://instagram.com/amayarasn" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://linkedin.com/in/mayarasena-202b52002n" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/amayarasena" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+
+    </header>
+    <div id="overlay" onclick="fecharMenu()"></div>
+    <main class="container">
+        <h1>🌿 Sabedoria Verde: o poder das folhas<br>medicinais no dia a dia</h1>
+        <p><b>Você sabia? Antes mesmo da existência de farmácias e medicamentos industrializados, as folhas medicinais
+                já
+                eram utilizadas para tratar dores, aliviar sintomas e promover o bem-estar. Esse conhecimento, passado
+                de
+                geração em geração, continua vivo e presente na rotina de muitas famílias até hoje.
+            </b></p>
+
+        <picture>
+            <source media="(max-width:350px)" srcset="imagens/cha.jpg">
+            <source media="(max-width:750px)" srcset="imagens/cha.jpg" type="image/jpg">
+            <img src="imagens/cha.jpg" alt="imagem flexivel">
+        </picture>
+
+
+        <h2>O que são folhas medicinais?</h2>
+        <p>As folhas medicinais são partes de plantas que possuem <b>substâncias naturais com propriedades
+                terapêuticas.</b>
+            Elas podem ser utilizadas de diversas formas, como:</p>
+        <ul>
+            <li>chás e infusões</li>
+            <li>compressas</li>
+            <li>banhos terapêuticos</li>
+            <li>xaropes caseiros</li>
+        </ul>
+        <p>Seu uso faz parte da medicina tradicional e também é estudado pela fitoterapia moderna</p>
+
+        <h2>Folhas medicinais mais conhecidas e seus benefícios</h2>
+        <p><b>🌿 Hortelã</b></p>
+        <p>Muito ultilizada para: melhorar digestão, reduzir gases e aliviar náuseas.</p>
+        <p><b>🌿 Boldo</b></p>
+        <p>Popularmente conhecido por: auxiliar no funcionamento do fígado, aliviar desconfortos digestivos e ajudar
+            após
+            refeições pesadas.</p>
+        <p><b>🌿 Erva-cidreira</b></p>
+        <p>Indicada para: reduzir a ansiedade , melhorar o sono e aliviar dores de cabeça.</p>
+        <p><b>🌿 Guaco</b></p>
+        <p>Bastante utilizado para: aliviar tosse, ajudar na expectoração e tratar problemas respiratórios leves.</p>
+
+        <h2>⚠️ Cuidados no uso de folhas medicinais</h2>
+        <p>Mesmo sendo naturais, as folhas medicinais exigem atenção:</p>
+        <p><b>Evite o uso excessivo<br><br> Não misture plantas sem orientação<br><br> Gestantes, crianças e pessoas com
+                doenças crônicas devem consultar um profissional<br><br> Certifique-se de identificar corretamente a
+                planta.</b></p>
+
+        <picture>
+            <source media="(max-width:350px)" srcset="imagens/folhas.jpg">
+            <source media="(max-width:750px)" srcset="imagens/folhas.jpg" type="image/jpg">
+            <img src="imagens/folhas.jpg" alt="imagem flexivel">
+        </picture>
+
+        <p><b>AVISO:</b> Todo o conteudo abordado neste site, foi elaborado por Inteligência atificial, afim de
+            fazer uma demonstração do avanço da prática da atividade física atualmente.</p>
+    </main>
+    <footer class="footer">
+        <div class="footer-row">
+            <p class="copyrigth">&copy;2025 MeuPortal - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+
+</html>

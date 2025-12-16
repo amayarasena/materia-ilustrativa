@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/meulogo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Corpo em movimento: o salto da atividade física no país</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=DM+Serif+Text:ital@0;1&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <button onclick="abrirMenu()">☰ Menu</button> <!--Botão de Menu lateral-->
+
+        <nav id="menu-lateral" class="menu-lateral">
+            <h2 class="titulo-menu">Meu Portal</h2><br><br>
+            <hr> <!--Linha horizontal-->
+
+            <div class="redes-sociais">
+                <a href="https://instagram.com/amayarasn" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://linkedin.com/in/mayarasena-202b52002n" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/amayarasena" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <hr>
+            <ul> <!--Barra lateral-->
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="economia.html">Economia</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+            <button onclick="fecharMenu()">Fechar</button><!--Botão de Fechar menu-->
+        </nav>
+        <!--Menu fixo-->
+        <nav class="nav">
+            <a href="index.html">Inicio</a>
+            <a href="esportes.html">Esportes</a>
+            <a href="saude.html">Saúde</a>
+            <a href="tecnologia.html">Tecnologia</a>
+        </nav>
+        <div class="social">
+            <a href="https://instagram.com/amayarasn" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://linkedin.com/in/mayarasena-202b52002n" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/amayarasena" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </header>
+    <div id="overlay" onclick="fecharMenu()"></div>
+
+    <main class="container">
+        <h3>Minha Trajetória como Desenvolvedora Web<br><br></h3>
+
+        <picture>
+            <source media="(max-width:350px)" srcset="imagens/perfil.jpg">
+            <source media="(max-width:768px)" srcset="imagens/perfil.jpg" type="image/jpg">
+            <img src="imagens/perfil.jpg" alt="imagem flexivel">
+        </picture>
+
+        <p>Sou estudante de Programação e Tecnologia da Informação e criei este site com o objetivo de apresentar um
+            projeto pessoal como desenvolvedora web. Trata-se de um site de caráter ilustrativo, desenvolvido para demonstrar na
+            prática minhas habilidades e evolução na área.<br><br> Atualmente, trabalho com as linguagens <b>HTML, CSS
+            e JavaScript,</b> aplicando conceitos fundamentais do desenvolvimento web em projetos próprios. Estou no
+            ramo da programação há mais de dois anos, porém foi neste ano que decidi me aprofundar de forma mais
+            consistente
+            e focada na área.<br><br>Venho desenvolvendo minhas habilidades por meio de cursos extracurriculares,
+            realizados
+            por iniciativa própria, sem auxílio direto de professores ou da faculdade no momento. Esse processo
+            autodidata
+            reflete meu comprometimento, curiosidade e dedicação constante ao aprendizado e ao crescimento profissional
+            como
+            desenvolvedora.</p>
+
+    </main>
+    <footer claas="footer">
+        <div class="footer-row">
+            <p class="copyrigth">&copy;2025 MeuPortal - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+
+</html>
